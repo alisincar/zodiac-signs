@@ -23,7 +23,7 @@ $ npm install zodiac-signs
 
 ```js
 const zodiac = require('zodiac-signs')('en');
-// Require with a language (format xx-YY sets (format xx)
+// Require with a language (format xx-YY sets (format xx))
 const zodiac = require('zodiac-signs')('en-US')
 // Require without an argument sets 'en'
 const zodiac = require('zodiac-signs')();
@@ -36,7 +36,7 @@ const zodiac = require('zodiac-signs')();
 console.log(zodiac.getSignByDate());
 // Returns the zodiac sign's information of the 22 of June
 console.log(zodiac.getSignByDate({ day: 22, month: 6 }));
-// Overload the default language (format xx-YY sets (format xx)
+// Overload the default language (format xx-YY sets (format xx))
 console.log(zodiac.getSignByDate({ day: 22, month: 6 }, 'fr'));
 ```
 ### Getting a zodiac sign from a name or symbol
@@ -45,7 +45,7 @@ console.log(zodiac.getSignByDate({ day: 22, month: 6 }, 'fr'));
 // Returns the Cancer sign's information
 console.log(zodiac.getSignByName('cancer');
 console.log(zodiac.getSignBySymbol('♋️');
-// Overload the default language (format xx-YY sets (format xx)
+// Overload the default language (format xx-YY sets (format xx))
 console.log(zodiac.getSignByName('cancer', 'fr'));
 console.log(zodiac.getSignBySymbol('♋️', 'fr');
 ```
@@ -57,7 +57,7 @@ console.log(zodiac.getSignBySymbol('♋️', 'fr');
 console.log(zodiac.getSymbols());
 // Returns an array of all the zodiac names
 console.log(zodiac.getNames());
-// Overload the default language (format xx-YY sets (format xx)
+// Overload the default language (format xx-YY sets (format xx))
 console.log(zodiac.getNames('fr'));
 ```
 
@@ -79,7 +79,9 @@ An integer is returned if the given parameter is wrong:
 ### Available languages
 
 - English (en)
+- Spanish (es)
 - French (fr)
+- Italian (it)
 - Russian (ru)
 - Turkish (tr)
 
@@ -87,10 +89,11 @@ Obviously, you are free to participate to the translation in any other language.
 
 ## Thanks
 
-- The Programming Discussion and the Coding Den Discord servers;
 - [Micah Akpan](https://github.com/micah-akpan) for the original package: [sign-teller](https://github.com/micah-akpan/sign-teller);
+- [The Programming Discussion](https://discord.gg/progdisc) and the [Coding Den](https://discord.gg/code) Discord servers;
 - [Martynov Denis](https://github.com/devmartynov) for the Russian translation;
-- [ALİ SİNCAR](https://github.com/alisincar) for the Turkish translation.
+- [ALİ SİNCAR](https://github.com/alisincar) for the Turkish translation;
+- [Vito Marseglia](https://github.com/VitoMars) for the Italian and Spanish translation.
 
 ## License
 
